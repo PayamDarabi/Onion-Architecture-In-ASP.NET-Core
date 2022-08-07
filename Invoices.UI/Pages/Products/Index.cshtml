@@ -1,0 +1,43 @@
+﻿@page
+@model Invoices.UI.Pages.Products.IndexModel
+
+@{
+    ViewData["Title"] = "صفحه محصولات";
+}
+
+<h3 style="float:right">محصولات</h3>
+<br />
+<br />
+<p style="float:right">
+    <a asp-page="Create">ایجاد محصول جدید</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                عنوان محصول
+            </th>
+            <th>
+                قیمت
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Product) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">ویرایش</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">جزئیات محصول</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">حذف</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -16,6 +16,6 @@ We will also build a WebApi that follows a variant of Onion Architecture and bla
 <!-- /wp:list -->
 
 ## ⭐️
-If you found this Implementation helpful or used it in your Projects, do give it a star. Thanks!
+If you found this Implementation helpful or used it in your Projects, do give it a star. Thanks
 
 

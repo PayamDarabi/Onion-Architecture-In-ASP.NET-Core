@@ -4,7 +4,8 @@ With WebApi And Blazor UI
 The onion architecture, introduced by Jeffrey Palermo, overcomes the issues of the layered architecture with great ease. With Onion Architecture, the game changer is that the Domain Layer (Entities and Validation Rules that are common to the business case ) is at the Core of the Entire Application. This means higher flexbility and lesser coupling. In this approach, we can see that all the Layers are dependent only on the Core Layers.
 
 
-We will talk about Onion Architecture In ASP.NET Core. We will also build a WebApi that follows a variant of Onion Architecture.
+We will see Onion Architecture In ASP.NET Core. </br>
+We will also build a WebApi that follows a variant of Onion Architecture and blazor ui in this repository.
 
 <!-- wp:paragraph -->
 <p>Here is a list of features and tech we will be using for this setup.</p>

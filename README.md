@@ -11,7 +11,7 @@ We will talk about Onion Architecture In ASP.NET Core. We will also build a WebA
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><li>Onion Architecture</li><li>Entity Framework Core</li><li>.NET Core 3.1 Library / .NET Standard 2.1 Library / ASP.NET Core 3.1 WebApi / ASP.NET Core 3.1 Blazor UI </li><li>Swagger</li><li>CRUD Operations</li><li>Inverted Dependencies</li><li>Fluent Validation</li><li>Unit Of Work</li></ul>
+<ul><li>Onion Architecture</li><li>Entity Framework Core</li><li>.NET Core 3.1 Library / .NET Standard 2.1 Library / ASP.NET Core 3.1 WebApi / ASP.NET Core 3.1 Blazor UI </li><li>Swagger</li><li>AutoMapper</li><li>CRUD Operations</li><li>Inverted Dependencies</li><li>Fluent Validation</li><li>Unit Of Work</li></ul>
 <!-- /wp:list -->
 
 ## ⭐️

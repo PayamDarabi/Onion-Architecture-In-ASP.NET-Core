@@ -2,26 +2,26 @@
 @model Invoices.UI.Pages.Products.DeleteModel
 
 @{
-    ViewData["Title"] = "حذف محصول";
+    ViewData["Title"] = "Delete Product";
 }
 
-<h3 style="float:right">حذف محصول</h3>
+<h3 style="float:right">Delete Product</h3>
 <br />
 <br />
-<h5 style="float:right">آیا از حذف این محصول مطمئنید؟</h5>
+<h5 style="float:right">Are You Confirm This Delete?</h5>
 <br />
 <div>
   
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-           عنوان محصول:
+           Product Title:
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Product.Title)
         </dd>
         <dt class="col-sm-2">
-         قیمت محصول:
+         Price:
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Product.Price)
@@ -30,7 +30,7 @@
     
     <form method="post" style="float:right;">
         <input type="hidden" asp-for="Product.Id" />
-        <input type="submit" value="حذف" class="btn btn-danger" /> |
-        <a asp-page="./Index">بازگشت</a>
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Return</a>
     </form>
 </div>

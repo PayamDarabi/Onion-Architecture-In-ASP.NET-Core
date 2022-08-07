@@ -2,22 +2,22 @@
 @model Invoices.UI.Pages.Products.DetailsModel
 
 @{
-    ViewData["Title"] = "جزئیات محصول";
+    ViewData["Title"] = "Product Details";
 }
 
-<h4 style="float:right">جزئیات محصول</h4>
+<h4 style="float:right">Product Details</h4>
 <br />
 <div>
     <hr />
     <dl class="row">
         <dt class="col-sm-2" >
-            عنوان محصول
+            Product Title
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Product.Title)
         </dd>
         <dt class="col-sm-2">
-           قیمت محصول
+           Price
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Product.Price)
@@ -25,6 +25,6 @@
     </dl>
 </div>
 <div style="float:right">
-    <a asp-page="./Edit" asp-route-id="@Model.Product.Id">ویرایش</a> |
-    <a asp-page="./Index">بازگشت</a>
+    <a asp-page="./Edit" asp-route-id="@Model.Product.Id">Edit</a> |
+    <a asp-page="./Index">Return</a>
 </div>

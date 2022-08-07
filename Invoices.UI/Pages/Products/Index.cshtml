@@ -2,23 +2,23 @@
 @model Invoices.UI.Pages.Products.IndexModel
 
 @{
-    ViewData["Title"] = "صفحه محصولات";
+    ViewData["Title"] = "Products Page";
 }
 
-<h3 style="float:right">محصولات</h3>
+<h3 style="float:right">Products</h3>
 <br />
 <br />
 <p style="float:right">
-    <a asp-page="Create">ایجاد محصول جدید</a>
+    <a asp-page="Create">Create New Product</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                عنوان محصول
+                Product Title
             </th>
             <th>
-                قیمت
+                Price
             </th>
             <th></th>
         </tr>
@@ -33,9 +33,9 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">ویرایش</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">جزئیات محصول</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">حذف</a>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }
